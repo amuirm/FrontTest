@@ -2,32 +2,52 @@
     padding: 0;
     margin: 0;
 }
+
 .intro-head{
     display: flex;
     justify-content: end;
     font-size: 56px;
     font-weight: bold;
-    margin: 10vh 16vh;
+    margin: 10vh 8vh 7vh 8vh;
     border-bottom: 1px solid;
     padding-bottom: 8px;
     animation-fill-mode: forwards;
-    animation: intro-head 2s;
+    animation: intro-head 1.7s;
 }
 @keyframes intro-head {
     from {
         width: 20vw;
     }
     to {
-        width: 84.3vw;
+        width: 92.2vw;
     }
 }
 span{
     padding-left: 10px;
 }
 section{
+    background-color: blanchedalmond;
+    margin: 8vh;
+    height: 62vh;
+}
+#click{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    animation: click 8s infinite;
+}
+@keyframes click {
+    12.5% {color: red;}
+    25% {color: orange;}
+    37.5% {color: yellow;}
+    50% {color: green}
+    62.5% {color: blue;}
+    75% {color: indigo}
+    87.5% {color: purple}
+}
+.section1{
     display: flex;
     justify-content: space-around;
-    
 }
 .name {
     display: flex;
@@ -37,41 +57,41 @@ section{
     margin-top: 12px;
 }
 .name1{
-    animation: name1 6s infinite;
+    animation: name1 5s infinite;
 }
 .name2{
-    animation: name2 6s infinite;
+    animation: name2 5s infinite;
 }
 .name3{
-    animation: name3 6s infinite;
+    animation: name3 5s infinite;
 }
 .name4{
-    animation: name4 6s infinite;
+    animation: name4 5s infinite;
 }
 @keyframes name1 {
-    20% {color: darkorange;}
+    20% {color: blue;}
     40% {color: darkgoldenrod;}
     60% {color: darkcyan;}
     80% {color: darkgreen;}
 }
 @keyframes name2 {
-    20% {color: darkcyan;}
-    40% {color: darkgoldenrod;}
-    60% {color: darkorange;}
-    80% {color: darkgreen;}
+    20% {color: darkgreen;}
+    40% {color: blue;}
+    60% {color: darkgoldenrod;}
+    80% {color: darkcyan;}
 }
 
 @keyframes name3 {
-    20% {color: darkgreen;}
-    40% {color: darkgoldenrod;}
-    60% {color: darkorange;}
-    80% {color: darkcyan;}
+    20% {color: darkcyan;}
+    40% {color: darkgreen;}
+    60% {color: blue;}
+    80% {color: darkgoldenrod;}
 }
 @keyframes name4 {
     20% {color: darkgoldenrod;}
-    40% {color: darkorange;}
-    60% {color: darkcyan;}
-    80% {color: darkgreen;}
+    40% {color: darkcyan;}
+    60% {color: darkgreen;}
+    80% {color: blue;}
 }
 .position{
     display: flex;
@@ -85,8 +105,41 @@ section{
     font-size: 20px;
     font-weight: bold;
 }
-.impression{
-    display: flex;
-    justify-content: center;
+.impression{  
+    display: table;
+    width: 220px;
     margin-top: 10px;
+}
+.impression p {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.introduce1-1{ 
+    position: absolute; opacity: 0; 
+}   
+    
+.introduce1:hover .introduce1-1{ 
+    opacity: 1; 
+}
+.introduce2-1{ 
+    position: absolute; opacity: 0; 
+}   
+    
+.introduce2:hover .introduce2-1{ 
+    opacity: 1; 
+}
+.introduce3-1{ 
+    position: absolute; opacity: 0; 
+}   
+    
+.introduce3:hover .introduce3-1{ 
+    opacity: 1; 
+}
+.introduce4-1{ 
+    position: absolute; opacity: 0; 
+}   
+    
+.introduce4:hover .introduce4-1{ 
+    opacity: 1; 
 }
